@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gitlabapi-trickfy-com
+ labels:
+   app: gitlabapi
+spec:
+  containers:
+  - name: gitlab-docker
+    image: sameerbhat/gitlab-docker
+    ports:
+    - containerPort: 4567
